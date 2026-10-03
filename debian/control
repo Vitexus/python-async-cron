@@ -1,0 +1,27 @@
+Source: python-async-cron
+Section: python
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-python,
+ python3-all,
+ python3-arrow,
+ python3-setuptools,
+Standards-Version: 4.7.0
+Homepage: https://github.com/aohan237/async_cron
+Vcs-Git: https://github.com/Vitexus/python-async-cron.git
+Vcs-Browser: https://github.com/Vitexus/python-async-cron
+Rules-Requires-Root: no
+
+Package: python3-async-cron
+Architecture: all
+Depends:
+ python3-arrow,
+ ${misc:Depends},
+ ${python3:Depends},
+Description: Asyncio crontab utilities
+ async-cron provides crontab-style scheduling helpers built on asyncio,
+ using the arrow library for time handling.
+ .
+ This package provides the Python 3 module for async_cron.
